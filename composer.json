@@ -13,6 +13,7 @@
         "arkitecht/laravel-twilio": "^1.6",
         "doctrine/dbal": "^3.7",
         "guzzlehttp/guzzle": "^7.8",
+        "intervention/image-laravel": "^1.2",
         "kkomelin/laravel-translatable-string-exporter": "^1.21",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",

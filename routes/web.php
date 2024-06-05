@@ -1410,6 +1410,7 @@ Route::group(['middleware' => ['verified']], function () {
 
     // cache
     Route::get('/config-cache', function () {
+        Artisan::call('storage:link');
         Artisan::call('cache:clear');
         Artisan::call('route:clear');
         Artisan::call('view:clear');

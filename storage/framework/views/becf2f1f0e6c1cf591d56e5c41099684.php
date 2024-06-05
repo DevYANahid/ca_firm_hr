@@ -24,11 +24,9 @@
 <div class="navbar-wrapper">
     <div class="m-header main-logo">
 
+        
         <a href="<?php echo e(route('home')); ?>" class="b-brand">
-            <!-- ========   change your logo hear   ============ -->
-            <img src="<?php echo e($logos . $logo . '?' . time()); ?>" alt="<?php echo e(env('APP_NAME')); ?>" class="logo logo-lg"
-                style="height: 40px;" />
-
+            <img src="<?php echo e(asset('assets/images/logo.png')); ?>" alt="" class="logo logo-lg" style="height: 40px;">
         </a>
 
     </div>

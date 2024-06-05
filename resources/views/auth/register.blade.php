@@ -5,7 +5,7 @@
 
 @php
     // $logo=asset(Storage::url('uploads/logo/'));
-    $logo = \App\Models\Utility::get_file('uploads/logo/');
+    $logo = \App\Models\Utility::get_file('uploads/logo');
     $settings = \App\Models\Utility::settings();
     
 @endphp

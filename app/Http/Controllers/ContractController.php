@@ -606,7 +606,7 @@ class ContractController extends Controller
         $settings = Utility::settings();
         $employee   = $contract->employee_name;
         //Set your logo
-        $logo         = asset(\Storage::url('uploads/logo/'));
+        $logo         = asset(\Storage::url('uploads/logo'));
         $dark_logo    = Utility::getValByName('company_logo');
         $img = asset($logo . '/' . (isset($dark_logo) && !empty($dark_logo) ? $dark_logo : 'logo-dark.png'));
         return view('contracts.contract_view', compact('contract', 'employee', 'img', 'settings'));
@@ -625,7 +625,7 @@ class ContractController extends Controller
 
             $usr = User::where('id', $contract->created_by)->first();
         }
-        $logo         = asset(\Storage::url('uploads/logo/'));
+        $logo         = asset(\Storage::url('uploads/logo'));
         $dark_logo    = Utility::getValByName('dark_logo');
         $img = asset($logo . '/' . (isset($dark_logo) && !empty($dark_logo) ? $dark_logo : 'logo-dark.png'));
 

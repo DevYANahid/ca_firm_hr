@@ -25,11 +25,13 @@
 <div class="navbar-wrapper">
     <div class="m-header main-logo">
 
-        <a href="{{ route('home') }}" class="b-brand">
+        {{-- <a href="{{ route('home') }}" class="b-brand">
             <!-- ========   change your logo hear   ============ -->
             <img src="{{ $logos . $logo . '?' . time() }}" alt="{{ env('APP_NAME') }}" class="logo logo-lg"
                 style="height: 40px;" />
-
+        </a> --}}
+        <a href="{{ route('home') }}" class="b-brand">
+            <img src="{{asset('assets/images/logo.png')}}" alt="" class="logo logo-lg" style="height: 40px;">
         </a>
 
     </div>

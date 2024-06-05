@@ -110,7 +110,7 @@ class SettingsController extends Controller
                 );
 
                 $logoName     = 'dark_logo.png';
-                $dir = 'uploads/logo/';
+                $dir = 'uploads/logo';
                 $validation = [
                     'mimes:' . 'png',
                     'max:' . '20480',
@@ -146,7 +146,7 @@ class SettingsController extends Controller
                 );
                 $logoName = 'light_logo.png';
 
-                $dir = 'uploads/logo/';
+                $dir = 'uploads/logo';
                 $validation = [
                     'mimes:' . 'png',
                     'max:' . '20480',
